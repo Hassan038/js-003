@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Bootstrap css-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!--Custom Css-->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>JS-03</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-light bg-info">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Movie Recomandation Web App</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container my-4">
+        <div class="row">
+          <div class="col-md-4">
+            <form action="#">
+              <label for="lang">Genre</label>
+              <select name="languages" id="Genre" class="w-100">
+                <option value="select">All</option>
+                <option value="Science Fiction">Science Fiction</option>
+                <option value="Action">Action</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Family">Family</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Crime">Crime</option>
+                <option value="Drama">Drama</option>
+                <option value="Animation">Animation</option>
+              </select>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <form action="#">
+              <label for="lang">Year</label>
+              <select name="languages" id="lang" class="w-100">
+                <option value="select">All</option>
+                <option value="2017">2017</option>
+                <option value="2021">2021</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2018">2018</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2014">2014</option>
+              </select>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <form action="#">
+              <label for="lang">Language</label>
+              <select name="languages" id="my-select" class="w-100">
+                <option value="select">All</option>
+                <option value="English">English</option>
+                <option value="Japanese">Japanese</option>
+                <option value="Spanish">Spanish</option>
+                <option value="Korean">Korean</option>
+                <option value="Cantonese">Cantonese</option>
+                <option value="French">French</option>
+                <option value="Mandarin">Mandarin</option>
+                <option value="Portuguese">Portuguese</option>
+              </select>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <form action="#">
+              <label for="lang">Rating</label>
+              <select name="languages" id="rating" class="w-100">
+                <option value="select">All</option>
+                <option value="7.9">7.9</option>
+                <option value="7.3">7.3</option>
+                <option value="7.6">7.6</option>
+                <option value="8.1">8.1</option>
+                <option value="8.5">8.5</option>
+                <option value="8.4">8.4</option>
+                <option value="8">8</option>
+                <option value="8.2">8.2</option>
+              </select>
+            </form>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-danger w-50 my-4" id="show-btn"">Recomend movies</button>
+      <!-- <div id="output">
+        <table id="customers">
+            <tr>
+              <th>Company</th>
+              <th>Contact</th>
+              <th>Country</th>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>Berglunds snabbköp</td>
+              <td>Christina Berglund</td>
+              <td>Sweden</td>
+            </tr>
+            <tr>
+              <td>Centro comercial Moctezuma</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+            </tr>
+            <tr>
+              <td>Ernst Handel</td>
+              <td>Roland Mendel</td>
+              <td>Austria</td>
+            </tr>
+            <tr>
+              <td>Island Trading</td>
+              <td>Helen Bennett</td>
+              <td>UK</td>
+            </tr>
+            <tr>
+              <td>Königlich Essen</td>
+              <td>Philip Cramer</td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>Laughing Bacchus Winecellars</td>
+              <td>Yoshi Tannamuri</td>
+              <td>Canada</td>
+            </tr>
+            <tr>
+              <td>Magazzini Alimentari Riuniti</td>
+              <td>Giovanni Rovelli</td>
+              <td>Italy</td>
+            </tr>
+            <tr>
+              <td>North/South</td>
+              <td>Simon Crowther</td>
+              <td>UK</td>
+            </tr>
+            <tr>
+              <td>Paris spécialités</td>
+              <td>Marie Bertrand</td>
+              <td>France</td>
+            </tr>
+          </table>
+      </div> -->
+    
+    
+    <div id="output"></div>
+    </main>
+    <footer></footer>
+
+    <!--CUstom Bootstrap js-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!--Custom js-->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
