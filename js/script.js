@@ -7,7 +7,7 @@
     const selectGenre = document.getElementById("Genre");
     const selectRate = document.getElementById("rating");
     const showElement = document.getElementById("show-btn");
-  
+    let result;
     function outMovies() {
       const selectedElement = selectElement.value;
       const selectedyear = selectYear.value;
@@ -26,15 +26,18 @@
           )
         );
       });
+      
       console.log(result);
+      showTable(result);
     }
-    function showTable (){
+    function showTable (result){
+        console.log(result);
       let startingCode = '<div class="table-responsive"><table class="table table-hover">'
       let tableHead =  '<thead><tr><th scope="col">#</th><th scope="col">Description</th></tr></thead>'
       let tableBody = '' 
       
-      for (let i = 0 ; i < result.length ; i++) {
-          tableBody += '<tr><th scope="row">' + (i +1) +'</th><td>'+result[i].title + '</td></tr>'
+      for (let i = 0 ; i < movies.length ; i++) {
+          tableBody += '<tr><th scope="row">' + (i +1) +'</th><td>'+movies[i].title + '</td></tr>'
       }
       let endingCode = '</table></div>'
       let table = startingCode + tableHead + "<tbody>" + tableBody + "</tbody>" + endingCode
